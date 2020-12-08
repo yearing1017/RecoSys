@@ -33,4 +33,4 @@ Recommend system learning resources and learning notes
 - [逻辑回归用于推荐系统](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/逻辑回归用于推荐系统.md)
 - [传统推荐模型的特点](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/传统推荐模型的特点总结.md)
 - [AutoRec-2015](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/AutoRec-2015.md)
-- [Deep%20Crossing-2016](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Deep%20Crossing-2016.md)
+- [Deep Crossing-2016](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Deep%20Crossing-2016.md)
