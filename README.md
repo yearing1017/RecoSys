@@ -3,13 +3,14 @@ Recommend system learning resources and learning notes
 
 ### 目录
 
-- [推荐系统论文](#)
+- [推荐系统论文](#paper)
 
-- [推荐系统学习笔记](#)
+- [推荐系统学习笔记](#note)
 
-- [资料积累](#)
+- [资料积累](#blog)
 
-<a id=“paper”></a>
+<a id="paper"></a>
+
 ### RecoSys_Paper
 
 #### Classic Recommender System
@@ -22,6 +23,11 @@ Recommend system learning resources and learning notes
 - [[AutoRec] AutoRec: Autoencoders Meet Collaborative Filtering(2015)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BAutoRec%5D-2015.pdf)
 - [[Deep Crossing] Deep Crossing - Web-Scale Modeling without Manually Crafted Combinatorial Features (Microsoft 2016) ](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BDeep%20Crossing%5D%20Deep%20Crossing%20-%20Web-Scale%20Modeling%20without%20Manually%20Crafted%20Combinatorial%20Features%20(Microsoft%202016).pdf)
 - [[NCF] Neural Collaborative Filtering (NUS 2017)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BNCF%5D%20Neural%20Collaborative%20Filtering%20(NUS%202017).pdf)
+- [[PNN\] Product-based Neural Networks for User Response Prediction (SJTU 2016)]()
+- [[Wide&Deep\] Wide & Deep Learning for Recommender Systems (Google 2016)]()
+- [[DCN\] Deep & Cross Network for Ad Click Predictions (Stanford 2017)]() 
+
+<a id="note"></a>
 
 
 ### RecoSys_note
@@ -34,3 +40,13 @@ Recommend system learning resources and learning notes
 - [传统推荐模型的特点](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/传统推荐模型的特点总结.md)
 - [AutoRec-2015](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/AutoRec-2015.md)
 - [Deep Crossing-2016](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Deep%20Crossing-2016.md)
+
+<a id="blog"></a>
+
+### RecoSys_resource
+
+#### 收藏的好文章
+
+- [见微知著，你真的搞懂Google的Wide&Deep模型了吗？](https://zhuanlan.zhihu.com/p/142958834)
+
+- [详解 Wide & Deep 结构背后的动机](https://zhuanlan.zhihu.com/p/53361519)
