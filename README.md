@@ -9,6 +9,8 @@ Recommend system learning resources and learning notes
 
 - [资料积累](#blog)
 
+- [使用PyTorch实现DeepCTR模型](#torch)
+
 <a id="paper"></a>
 
 ### RecoSys_Paper
@@ -30,7 +32,6 @@ Recommend system learning resources and learning notes
 - [[DeepFM] A Factorization-Machine based Neural Network for CTR Prediction (HIT-Huawei 2017)]()
 
 <a id="note"></a>
-
 
 ### RecoSys_note
 
@@ -61,3 +62,12 @@ Recommend system learning resources and learning notes
 
 - [无中生有：论推荐算法中的Embedding思想](https://zhuanlan.zhihu.com/p/320196402)
 - [Embedding在深度推荐系统中的3大应用方向](https://zhuanlan.zhihu.com/p/67218758)
+
+<a id="torch"></a>
+
+### DeepCTR_PyTorch
+
+- [AutoRec-2015](https://github.com/yearing1017/RecoSys/tree/main/Models_PyTorch/AutoRec-2015)
+- [Deep Crossing-2016](#)
+- [NeuralCF-2016](https://github.com/yearing1017/RecoSys/tree/main/Models_PyTorch/NeuralCF-2016)
+- [AFM-2017](https://github.com/yearing1017/RecoSys/tree/main/Models_PyTorch/AFM-2017)
