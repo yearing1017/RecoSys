@@ -4,11 +4,8 @@ Recommend system learning resources and learning notes
 ### 目录
 
 - [推荐系统论文](#paper)
-
 - [推荐系统学习笔记](#note)
-
 - [资料积累](#blog)
-
 - [使用PyTorch实现DeepCTR模型](#torch)
 
 <a id="paper"></a>
@@ -43,6 +40,10 @@ Recommend system learning resources and learning notes
 
 ### RecoSys_note
 
+- [《推荐系统实践》- 好的推荐系统](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(1)--%20一个好的推荐系统.md)
+- [《推荐系统实践》- 利用用户行为数据进行推荐](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(2)--利用用户行为数据进行推荐.md)
+- [《推荐系统实践》- 冷启动问题](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(3)--冷启动问题.md)
+- [《推荐系统实践》- 利用标签数据进行推荐](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(4)--利用标签数据进行推荐.md)
 - [协同过滤与矩阵分解](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/协同过滤和矩阵分解.md)
 - [自动特征交叉：FM-FFM](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/自动特征交叉_FM-FFM.md)
 - [逻辑回归用于推荐系统](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/逻辑回归用于推荐系统.md)
@@ -60,6 +61,9 @@ Recommend system learning resources and learning notes
 
 - [机器学习中的MLE、MAP、贝叶斯估计](https://zhuanlan.zhihu.com/p/72370235)
 - [推荐系统召回四模型之：全能的FM模型](https://zhuanlan.zhihu.com/p/58160982)
+- [一篇文章搞定GBDT、Xgboost和LightGBM的面试](https://zhuanlan.zhihu.com/p/148050748)
+- [【机器学习】决策树（上）——ID3、C4.5、CART](https://zhuanlan.zhihu.com/p/85731206)
+- [机器学习】决策树（下）——XGBoost、LightGBM](https://zhuanlan.zhihu.com/p/87885678)
 
 #### 推荐系统&深度学习网络
 
@@ -71,6 +75,7 @@ Recommend system learning resources and learning notes
 - [无中生有：论推荐算法中的Embedding思想](https://zhuanlan.zhihu.com/p/320196402)
 - [Embedding在深度推荐系统中的3大应用方向](https://zhuanlan.zhihu.com/p/67218758)
 - [一文梳理推荐系统的中Embedding的应用实践](https://mp.weixin.qq.com/s/2JuyVJos2RrqGKcVgZRZvA)
+- [深度学习中不得不学的Graph Embedding方法](https://zhuanlan.zhihu.com/p/64200072)
 
 <a id="torch"></a>
 
