@@ -70,6 +70,7 @@ Recommend system learning resources and learning notes
 
 - [无中生有：论推荐算法中的Embedding思想](https://zhuanlan.zhihu.com/p/320196402)
 - [Embedding在深度推荐系统中的3大应用方向](https://zhuanlan.zhihu.com/p/67218758)
+- [一文梳理推荐系统的中Embedding的应用实践](https://mp.weixin.qq.com/s/2JuyVJos2RrqGKcVgZRZvA)
 
 <a id="torch"></a>
 
