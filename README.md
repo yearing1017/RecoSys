@@ -36,6 +36,13 @@ Recommend system learning resources and learning notes
 - [[DeepFM] A Factorization-Machine based Neural Network for CTR Prediction (HIT-Huawei 2017)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BDeepFM%5D%20A%20Factorization-Machine%20based%20Neural%20Network%20for%20CTR%20Prediction%20(HIT-Huawei%202017).pdf)
 - [[AFM] Attentional Factorization Machines - Learning the Weight of Feature Interactions via Attention Networks (ZJU 2017)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BAFM%5D%20Attentional%20Factorization%20Machines%20-%20Learning%20the%20Weight%20of%20Feature%20Interactions%20via%20Attention%20Networks%20(ZJU%202017).pdf)
 
+#### Embedding
+
+- [[Word2Vec] Distributed Representations of Words and Phrases and their Compositionality (Google 2013)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BWord2Vec%5D%20Distributed%20Representations%20of%20Words%20and%20Phrases%20and%20their%20Compositionality%20(Google%202013).pdf)
+- [[Word2Vec] Efficient Estimation of Word Representations in Vector Space (Google 2013)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BWord2Vec%5D%20Efficient%20Estimation%20of%20Word%20Representations%20in%20Vector%20Space%20(Google%202013).pdf)
+- [[Word2Vec] Word2vec Parameter Learning Explained (UMich 2016)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BWord2Vec%5D%20Word2vec%20Parameter%20Learning%20Explained%20(UMich%202016).pdf)
+- [[Item2Vec] Item2Vec-Neural Item Embedding for Collaborative Filtering (Microsoft 2016)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BItem2Vec%5D%20Item2Vec-Neural%20Item%20Embedding%20for%20Collaborative%20Filtering%20(Microsoft%202016).pdf)
+
 <a id="note"></a>
 
 ### RecoSys_note
@@ -44,6 +51,7 @@ Recommend system learning resources and learning notes
 - [《推荐系统实践》- 利用用户行为数据进行推荐](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(2)--利用用户行为数据进行推荐.md)
 - [《推荐系统实践》- 冷启动问题](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(3)--冷启动问题.md)
 - [《推荐系统实践》- 利用标签数据进行推荐](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(4)--利用标签数据进行推荐.md)
+- [《推荐系统实践》- 利用时间上下文进行推荐](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(5)-利用上下文信息进行推荐.md)
 - [协同过滤与矩阵分解](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/协同过滤和矩阵分解.md)
 - [自动特征交叉：FM-FFM](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/自动特征交叉_FM-FFM.md)
 - [逻辑回归用于推荐系统](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/逻辑回归用于推荐系统.md)
