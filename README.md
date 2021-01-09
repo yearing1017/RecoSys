@@ -52,6 +52,7 @@ Recommend system learning resources and learning notes
 - [《推荐系统实践》- 冷启动问题](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(3)--冷启动问题.md)
 - [《推荐系统实践》- 利用标签数据进行推荐](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(4)--利用标签数据进行推荐.md)
 - [《推荐系统实践》- 利用时间上下文进行推荐](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(5)-利用上下文信息进行推荐.md)
+- - [《推荐系统实践》- 利用社交网络进行推荐](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(6)--利用社交网络推荐.md)
 - [协同过滤与矩阵分解](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/协同过滤和矩阵分解.md)
 - [自动特征交叉：FM-FFM](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/自动特征交叉_FM-FFM.md)
 - [逻辑回归用于推荐系统](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/逻辑回归用于推荐系统.md)
