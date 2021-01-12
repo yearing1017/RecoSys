@@ -61,6 +61,8 @@ Recommend system learning resources and learning notes
 - [Deep Crossing-2016](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Deep%20Crossing-2016.md)
 - [GBDT](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/GBDT.md)
 - [GBDT + LR](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/GBDT%20%2B%20LR.md)
+- [特征工程](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/特征工程.md)
+- [Spark与特征处理](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Spark与特征处理.md)
 
 <a id="blog"></a>
 
