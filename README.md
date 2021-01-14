@@ -42,6 +42,7 @@ Recommend system learning resources and learning notes
 - [[Word2Vec] Efficient Estimation of Word Representations in Vector Space (Google 2013)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BWord2Vec%5D%20Efficient%20Estimation%20of%20Word%20Representations%20in%20Vector%20Space.pdf)
 - [[Word2Vec] Word2vec Parameter Learning Explained (UMich 2016)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BWord2Vec%5D%20Word2vec%20Parameter%20Learning%20Explained%20.pdf)
 - [[Item2Vec] Item2Vec-Neural Item Embedding for Collaborative Filtering (Microsoft 2016)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BItem2Vec%5D%20Item2Vec-Neural%20Item%20Embedding%20for%20Collaborative%20Filtering.pdf)
+-[[Airbnb Embedding] Real-time Personalization using Embeddings for Search Ranking at Airbnb (Airbnb 2018)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BAirbnb%20Embedding%5D%20Real-time%20Personalization%20using%20Embeddings%20for%20Search%20Ranking%20at%20Airbnb%20(Airbnb%202018).pdf)
 
 <a id="note"></a>
 
