@@ -94,6 +94,7 @@ Recommend system learning resources and learning notes
 
 ### DeepCTR_PyTorch
 
+- [CollaborativeFiltering](https://github.com/yearing1017/RecoSys/tree/main/Models_PyTorch/CollaborativeFiltering)
 - [AutoRec-2015](https://github.com/yearing1017/RecoSys/tree/main/Models_PyTorch/AutoRec-2015)
 - [Deep Crossing-2016](#)
 - [NeuralCF-2016](https://github.com/yearing1017/RecoSys/tree/main/Models_PyTorch/NeuralCF-2016)
