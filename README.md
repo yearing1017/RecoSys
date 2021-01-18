@@ -3,10 +3,10 @@ Recommend system learning resources and learning notes
 
 ### 目录
 
-- [推荐系统论文](#paper)
-- [推荐系统学习笔记](#note)
-- [资料积累](#blog)
-- [使用PyTorch实现DeepCTR模型](#torch)
+- [RecoSys_Paper](#paper)
+- [RecoSys_Note](#note)
+- [RecoSys_LearningResources](#blog)
+- [RecoSys_Algorithm_PyTorch](#torch)
 
 <a id="paper"></a>
 
@@ -65,6 +65,7 @@ Recommend system learning resources and learning notes
 - [特征工程](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/特征工程.md)
 - [Spark与特征处理](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Spark与特征处理.md)
 - [Embedding基础](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Embedding基础.md)
+- [初识Graph Embedding](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Graph%20Embedding%20.md) 
 
 <a id="blog"></a>
 
@@ -75,10 +76,10 @@ Recommend system learning resources and learning notes
 - [机器学习中的MLE、MAP、贝叶斯估计](https://zhuanlan.zhihu.com/p/72370235)
 - [推荐系统召回四模型之：全能的FM模型](https://zhuanlan.zhihu.com/p/58160982)
 - [一篇文章搞定GBDT、Xgboost和LightGBM的面试](https://zhuanlan.zhihu.com/p/148050748)
-- [【机器学习】决策树（上）——ID3、C4.5、CART](https://zhuanlan.zhihu.com/p/85731206)
-- [机器学习】决策树（下）——XGBoost、LightGBM](https://zhuanlan.zhihu.com/p/87885678)
+- [机器学习决策树（上）——ID3、C4.5、CART](https://zhuanlan.zhihu.com/p/85731206)
+- [机器学习决策树（下）——XGBoost、LightGBM](https://zhuanlan.zhihu.com/p/87885678)
 
-#### 推荐系统&深度学习网络
+#### 推荐系统&深度学习
 
 - [见微知著，你真的搞懂Google的Wide&Deep模型了吗？](https://zhuanlan.zhihu.com/p/142958834)
 - [详解 Wide & Deep 结构背后的动机](https://zhuanlan.zhihu.com/p/53361519)
@@ -92,10 +93,10 @@ Recommend system learning resources and learning notes
 
 <a id="torch"></a>
 
-### DeepCTR_PyTorch
+### RecoSys_Algorithm_PyTorch
 
 - [CollaborativeFiltering](https://github.com/yearing1017/RecoSys/tree/main/Models_PyTorch/CollaborativeFiltering)
 - [AutoRec-2015](https://github.com/yearing1017/RecoSys/tree/main/Models_PyTorch/AutoRec-2015)
-- [Deep Crossing-2016](#)
+- [Deep Crossing-2016](https://github.com/yearing1017/RecoSys/tree/main/RecoSys_Algorithm_PyTorch/Deep_Crossing-2016)
 - [NeuralCF-2016](https://github.com/yearing1017/RecoSys/tree/main/Models_PyTorch/NeuralCF-2016)
 - [AFM-2017](https://github.com/yearing1017/RecoSys/tree/main/Models_PyTorch/AFM-2017)
