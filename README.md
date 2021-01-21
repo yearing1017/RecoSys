@@ -60,12 +60,14 @@ Recommend system learning resources and learning notes
 - [传统推荐模型的特点](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/传统推荐模型的特点总结.md)
 - [AutoRec-2015](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/AutoRec-2015.md)
 - [Deep Crossing-2016](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Deep%20Crossing-2016.md)
-- [GBDT](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/GBDT.md)
+- [GBDT原理总结](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/GBDT.md)
 - [GBDT + LR](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/GBDT%20%2B%20LR.md)
 - [特征工程](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/特征工程.md)
 - [Spark与特征处理](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Spark与特征处理.md)
 - [Embedding基础](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Embedding基础.md)
 - [初识Graph Embedding](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Graph%20Embedding%20.md) 
+- [线上服务及存储模块](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/线上服务及存储模块.md)
+- [召回层中的常用策略](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/召回层初识.md)
 
 <a id="blog"></a>
 
