@@ -69,6 +69,7 @@ Recommend system learning resources and learning notes
 - [线上服务及存储模块](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/线上服务及存储模块.md)
 - [召回层中的常用策略](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/召回层初识.md)
 - [基于Embedding召回中的局部敏感哈希策略](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/局部敏感哈希：在常数时间内搜索Embedding最近邻.md)
+- [基于Embedding+MLP的Deep Crossing](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/基于Embedding%2BMLP的Deep%20Crossing.md)
 
 <a id="blog"></a>
 
