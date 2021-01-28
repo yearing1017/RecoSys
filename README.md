@@ -58,8 +58,9 @@ Recommend system learning resources and learning notes
 - [自动特征交叉：FM-FFM](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/自动特征交叉_FM-FFM.md)
 - [逻辑回归用于推荐系统](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/逻辑回归用于推荐系统.md)
 - [传统推荐模型的特点](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/传统推荐模型的特点总结.md)
-- [AutoRec-2015](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/AutoRec-2015.md)
-- [Deep Crossing-2016](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Deep%20Crossing-2016.md)
+- [论文：AutoRec-2015](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/AutoRec-2015.md)
+- [论文：Deep Crossing-2016](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Deep%20Crossing-2016.md)
+- [论文：NeuralCF-2017](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Neural%20CF-2017.md)
 - [GBDT原理总结](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/GBDT.md)
 - [GBDT + LR](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/GBDT%20%2B%20LR.md)
 - [特征工程](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/特征工程.md)
@@ -71,6 +72,8 @@ Recommend system learning resources and learning notes
 - [基于Embedding召回中的局部敏感哈希策略](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/局部敏感哈希：在常数时间内搜索Embedding最近邻.md)
 - [基于Embedding+MLP的Deep Crossing](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/基于Embedding%2BMLP的Deep%20Crossing.md)
 - [综合“记忆”和“泛化”的Wide&Deep](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Wide%26Deep模型.md)
+- [协同过滤的深度学习进化:NeuralCF](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/NeuralCF.md)
+- [基于FM与Wide&Deep的DeepFM](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/DeepFM.md)
 
 <a id="blog"></a>
 
