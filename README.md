@@ -74,6 +74,7 @@ Recommend system learning resources and learning notes
 - [综合“记忆”和“泛化”的Wide&Deep](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Wide%26Deep模型.md)
 - [协同过滤的深度学习进化:NeuralCF](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/NeuralCF.md)
 - [基于FM与Wide&Deep的DeepFM](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/DeepFM.md)
+- [基于Attention的推荐系统-DIN和DIEN](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/基于Attention的推荐系统-DIN和DIEN.md)
 
 <a id="blog"></a>
 
