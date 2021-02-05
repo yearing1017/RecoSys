@@ -76,6 +76,7 @@ Recommend system learning resources and learning notes
 - [基于FM与Wide&Deep的DeepFM](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/DeepFM.md)
 - [基于Attention的推荐系统-DIN和DIEN](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/基于Attention的推荐系统-DIN和DIEN.md)
 - [离线评估方法](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/离线评估方法.md)
+- [评估指标](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/评估指标.md)
 
 <a id="blog"></a>
 
