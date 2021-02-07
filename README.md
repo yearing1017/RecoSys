@@ -78,6 +78,7 @@ Recommend system learning resources and learning notes
 - [离线评估方法](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/离线评估方法.md)
 - [常用离线评估指标](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/评估指标.md)
 - [理解线上A/B测试](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/线上A:B测试.md)
+- [推荐系统中的的评估体系](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/评估体系.md)
 
 <a id="blog"></a>
 
