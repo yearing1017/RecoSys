@@ -75,7 +75,7 @@ Recommend system learning resources and learning notes
 - [协同过滤的深度学习进化:NeuralCF](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/NeuralCF.md)
 - [基于FM与Wide&Deep的DeepFM](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/DeepFM.md)
 - [基于Attention的推荐系统-DIN和DIEN](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/基于Attention的推荐系统-DIN和DIEN.md)
-- [离线评估方法](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/离线评估方法.md)
+- [常用离线评估方法](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/离线评估方法.md)
 - [常用离线评估指标](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/评估指标.md)
 - [理解线上A/B测试](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/线上A:B测试.md)
 - [推荐系统中的的评估体系](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/评估体系.md)
