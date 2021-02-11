@@ -85,7 +85,7 @@ Recommend system learning resources and learning notes
 
 ### RecoSys_resource
 
-#### 传统机器学习推荐系统
+#### 机器学习与推荐系统
 
 - [机器学习中的MLE、MAP、贝叶斯估计](https://zhuanlan.zhihu.com/p/72370235)
 - [推荐系统召回四模型之：全能的FM模型](https://zhuanlan.zhihu.com/p/58160982)
