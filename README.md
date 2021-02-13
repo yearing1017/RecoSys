@@ -50,7 +50,7 @@ Recommend system learning resources and learning notes
 
 - [《推荐系统实践》- 什么是好的推荐系统](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(1)--%20一个好的推荐系统.md)
 - [《推荐系统实践》- 利用用户行为数据进行推荐](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(2)--利用用户行为数据进行推荐.md)
-- [《推荐系统实践》- 冷启动问题](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(3)--冷启动问题.md)
+- [《推荐系统实践》- 推荐系统的冷启动问题](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(3)--冷启动问题.md)
 - [《推荐系统实践》- 利用标签数据进行推荐](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(4)--利用标签数据进行推荐.md)
 - [《推荐系统实践》- 利用时间上下文进行推荐](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(5)-利用上下文信息进行推荐.md)
 - [《推荐系统实践》- 利用社交网络进行推荐](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(6)--利用社交网络推荐.md)
