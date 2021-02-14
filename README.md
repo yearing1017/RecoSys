@@ -56,7 +56,7 @@ Recommend system learning resources and learning notes
 - [《推荐系统实践》- 利用社交网络进行推荐](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/推荐系统实践(6)--利用社交网络推荐.md)
 - [协同过滤与矩阵分解](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/协同过滤和矩阵分解.md)
 - [自动特征交叉：FM-FFM](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/自动特征交叉_FM-FFM.md)
-- [逻辑回归用于推荐系统](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/逻辑回归用于推荐系统.md)
+- [逻辑回归与推荐系统](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/逻辑回归用于推荐系统.md)
 - [传统推荐模型的特点](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/传统推荐模型的特点总结.md)
 - [论文：AutoRec-2015](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/AutoRec-2015.md)
 - [论文：Deep Crossing-2016](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Deep%20Crossing-2016.md)
