@@ -63,7 +63,7 @@ Recommend system learning resources and learning notes
 - [NeuralCF-2017论文笔记](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Neural%20CF-2017.md)
 - [GBDT原理总结](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/GBDT.md)
 - [GBDT + LR](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/GBDT%20%2B%20LR.md)
-- [特征工程](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/特征工程.md)
+- [推荐系统中的特征工程](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/特征工程.md)
 - [Spark与特征处理](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Spark与特征处理.md)
 - [Embedding基础](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Embedding基础.md)
 - [初识Graph Embedding](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/Graph%20Embedding%20.md) 
