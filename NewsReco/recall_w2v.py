@@ -94,10 +94,10 @@ def word2vec(df_, f1, f2, model_path):
 def recall(df_query, article_vec_map, article_index, user_item_dict,
            worker_id):
     data_list = []
-    # 给验证集的用户召回
+    # 给验证集（包括线下验证+test）的用户召回
     for user_id, item_id in tqdm(df_query.values):
         rank = defaultdict(int)
-        # 验证集的用户曾经点过的新闻
+        # 验证集的用户曾经点过的新闻；包括test的，因为click里面包含test的用户数据
         interacted_items = user_item_dict[user_id]
         
         interacted_items = interacted_items[-1:]
@@ -226,7 +226,7 @@ if __name__ == '__main__':
     # 计算召回指标
     if mode == 'valid':
         log.info(f'计算召回指标')
-        # user_id 唯一值的个数 即 多少个验证集的用户
+        # user_id 唯一值的个数 即 多少个线下验证集的用户
         total = df_query[df_query['click_article_id'] != -1].user_id.nunique()
 
         hitrate_5, mrr_5, hitrate_10, mrr_10, hitrate_20, mrr_20, hitrate_40, mrr_40, hitrate_50, mrr_50 = evaluate(

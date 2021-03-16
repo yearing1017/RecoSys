@@ -89,7 +89,7 @@ def recall(df_query, item_sim, user_item_dict, worker_id):
 
     for user_id, item_id in tqdm(df_query.values):
         rank = {}
-        # 此句意思是给验证集的用户召回 
+        # 此句意思是给验证集的用户召回:包括线下的验证集和test 
         if user_id not in user_item_dict:
             continue
         # 针对每个用户 取出相应的历史点击新闻序列
@@ -116,6 +116,7 @@ def recall(df_query, item_sim, user_item_dict, worker_id):
         df_temp['user_id'] = user_id
 
         # 构建 正负样本
+        # 将test的用户的label设为-1
         if item_id == -1:
             df_temp['label'] = np.nan
         else:
@@ -189,12 +190,12 @@ if __name__ == '__main__':
                                              False]).reset_index(drop=True)
     log.debug(f'df_data.head: {df_data.head()}')
 
-    # 计算召回指标
+    # 计算召回指标；线下验证的指标
     if mode == 'valid':
         log.info(f'计算召回指标')
-
+        # 线下验证的用户数
         total = df_query[df_query['click_article_id'] != -1].user_id.nunique()
-
+        # 线下验证的都有label
         hitrate_5, mrr_5, hitrate_10, mrr_10, hitrate_20, mrr_20, hitrate_40, mrr_40, hitrate_50, mrr_50 = evaluate(
             df_data[df_data['label'].notnull()], total)
 
