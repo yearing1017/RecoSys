@@ -111,7 +111,9 @@ def recall(df_query, item_sim, user_item_dict, worker_id):
         item_sim_scores = [item[1] for item in sim_items]
         # 将验证集中每个用户的召回结果保存下来
         df_temp = pd.DataFrame()
+        # 这个地方会把列表对应到df的多行中，例如item_ids = [1,2,3] 会产生三行文章id，分别是1，2，3
         df_temp['article_id'] = item_ids
+        # 此处的得分 也会与上面的id对应
         df_temp['sim_score'] = item_sim_scores
         df_temp['user_id'] = user_id
 

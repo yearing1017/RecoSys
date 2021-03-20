@@ -161,6 +161,7 @@ if __name__ == '__main__':
             useful_recall.append(g)
         else:
             label_sum = g['label'].sum()
+            # 因为当时就是按照最后点击构建的，所以一个用户只有一个1
             if label_sum > 1:
                 print('error', user_id)
             elif label_sum == 1:

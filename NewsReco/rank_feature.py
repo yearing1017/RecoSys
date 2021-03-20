@@ -63,20 +63,7 @@ def func_if_last(x):
         pass
     return sim
 
-'''
-def func_binetwork_sim_last(x):
-    user_id = x['user_id']
-    article_id = x['article_id']
 
-    last_item = user_item_dict[user_id][-1]
-
-    sim = 0
-    try:
-        sim = binetwork_sim[last_item][article_id]
-    except Exception as e:
-        pass
-    return sim
-'''
 # 两个向量之间的余弦距离
 def consine_distance(vector1, vector2):
     if type(vector1) != np.ndarray or type(vector2) != np.ndarray:
@@ -287,24 +274,7 @@ if __name__ == '__main__':
     log.debug(f'df_feature.shape: {df_feature.shape}')
     log.debug(f'df_feature.columns: {df_feature.columns.tolist()}')
 
-    '''
-    ## binetwork 相关
-    if mode == 'valid':
-        f = open('../user_data/sim/offline/binetwork_sim.pkl', 'rb')
-        binetwork_sim = pickle.load(f)
-        f.close()
-    else:
-        f = open('../user_data/sim/online/binetwork_sim.pkl', 'rb')
-        binetwork_sim = pickle.load(f)
-        f.close()
-
-    df_feature['user_last_click_article_binetwork_sim'] = df_feature[[
-        'user_id', 'article_id'
-    ]].parallel_apply(func_binetwork_sim_last, axis=1)
-
-    log.debug(f'df_feature.shape: {df_feature.shape}')
-    log.debug(f'df_feature.columns: {df_feature.columns.tolist()}')
-    '''
+    
     ## w2v 相关 将之前的召回的新闻相似度矩阵 拿出来 构建下面两个特征 保存下来
     if mode == 'valid':
         f = open('../user_data/data/offline/article_w2v.pkl', 'rb')
