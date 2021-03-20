@@ -242,6 +242,7 @@ if __name__ == '__main__':
 
     df_feature['user_last_click_created_at_ts_diff'] = df_feature[
         'created_at_ts'] - df_feature['user_click_last_article_created_time']
+    # 该特征的重要性很大 仅次于协同过滤的重要性
     df_feature['user_last_click_timestamp_diff'] = df_feature[
         'created_at_ts'] - df_feature['user_click_last_article_click_time']
     df_feature['user_last_click_words_count_diff'] = df_feature[
