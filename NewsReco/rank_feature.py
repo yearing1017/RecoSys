@@ -68,6 +68,7 @@ def func_if_last(x):
 def consine_distance(vector1, vector2):
     if type(vector1) != np.ndarray or type(vector2) != np.ndarray:
         return -1
+    # np.dot()处理的是一维数组 求得是内积 linalg.norm 求向量的模
     distance = np.dot(vector1, vector2) / \
         (np.linalg.norm(vector1)*(np.linalg.norm(vector2)))
     return distance

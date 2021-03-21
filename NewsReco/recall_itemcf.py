@@ -63,7 +63,7 @@ def cal_sim(df):
                 loc_alpha = 1.0 if loc2 > loc1 else 0.7
                 # 离得越近且为正向点击的话 权重就越大
                 loc_weight = loc_alpha * (0.9**(np.abs(loc2 - loc1) - 1))
-
+                # math.log(1 + len(items))是对活跃用户的惩罚
                 sim_dict[item][relate_item] += loc_weight  / \
                     math.log(1 + len(items))
     # 根据上面得到的共现数 算相似矩阵 C矩阵归一化可以得到物品之间的余弦相似度矩阵W。
