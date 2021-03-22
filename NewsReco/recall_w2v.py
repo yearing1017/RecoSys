@@ -52,7 +52,7 @@ def word2vec(df_, f1, f2, model_path):
     df = df_.copy()
     tmp = df.groupby(f1, as_index=False)[f2].agg(
         {'{}_{}_list'.format(f1, f2): list})
-    # sentenses 是将每个用户的点击历史点击新闻id按照从前往后的顺序存到一个list中  所以的用户形成一个总的list
+    # sentenses 是将每个用户的点击历史点击新闻id按照从前往后的顺序存到一个list中  所有的用户形成一个总的list
     # 以下是5个用户的
     # [[300470, 16129, 160974], [160974], [183665, 181686], [160974, 202557], [160974, 160417]]
     sentences = tmp['{}_{}_list'.format(f1, f2)].values.tolist()
@@ -64,6 +64,7 @@ def word2vec(df_, f1, f2, model_path):
         #  只有转换成字符串才可以进行训练
         x = [str(x) for x in sentences[i]]
         sentences[i] = x
+        # word存放的是所有人的序列 word=[300470, 16129, 160974,160974]
         words += x
 
     if os.path.exists(f'{model_path}/w2v.m'):
