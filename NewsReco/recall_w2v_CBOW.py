@@ -28,7 +28,7 @@ seed = 2020
 random.seed(seed)
 
 # 命令行参数
-parser = argparse.ArgumentParser(description='w2v 召回')
+parser = argparse.ArgumentParser(description='w2v 召回 cbow')
 parser.add_argument('--mode', default='valid')
 parser.add_argument('--logfile', default='test.log')
 
@@ -40,7 +40,7 @@ logfile = args.logfile
 # 初始化日志
 os.makedirs('user_data/log', exist_ok=True)
 log = Logger(f'user_data/log/{logfile}').logger
-log.info(f'w2v 召回，mode: {mode}')
+log.info(f'w2v 召回 cbow，mode: {mode}')
 
 '''
 除了使用人工规则从序列中提取相似度，我们还可以使用序列学习模型 Word2Vec 为新闻学习向量表示。
@@ -67,14 +67,14 @@ def word2vec(df_, f1, f2, model_path):
         # word存放的是所有人的序列 word=[300470, 16129, 160974,160974]
         words += x
 
-    if os.path.exists(f'{model_path}/w2v.m'):
-        model = Word2Vec.load(f'{model_path}/w2v.m')
+    if os.path.exists(f'{model_path}/w2v_cbow.m'):
+        model = Word2Vec.load(f'{model_path}/w2v_cbow.m')
     else:
         model = Word2Vec(sentences=sentences,
                          size=256, # size: 表示词向量的维度。
                          window=3, #window：决定了目标词会与多远距离的上下文产生关系。
                          min_count=1, # min_count: 设置最小的
-                         sg=1, #sg: 如果是0，则是CBOW模型，是1则是Skip-Gram模型。
+                         sg=0, #sg: 如果是0，则是CBOW模型，是1则是Skip-Gram模型。
                          hs=0,
                          seed=seed,
                          negative=5,
@@ -142,8 +142,8 @@ def recall(df_query, article_vec_map, article_index, user_item_dict,
 
     df_data = pd.concat(data_list, sort=False)
 
-    os.makedirs('user_data/tmp/w2v', exist_ok=True)
-    df_data.to_pickle('user_data/tmp/w2v/{}.pkl'.format(worker_id))
+    os.makedirs('user_data/tmp/w2v_cbow', exist_ok=True)
+    df_data.to_pickle('user_data/tmp/w2v_cbow/{}.pkl'.format(worker_id))
 
 
 if __name__ == '__main__':
@@ -154,7 +154,7 @@ if __name__ == '__main__':
         os.makedirs('user_data/data/offline', exist_ok=True)
         os.makedirs('user_data/model/offline', exist_ok=True)
 
-        w2v_file = 'user_data/data/offline/article_w2v.pkl'
+        w2v_file = 'user_data/data/offline/article_w2v_cbow.pkl'
         model_path = 'user_data/model/offline'
     else:
         df_click = pd.read_pickle('user_data/data/online/click.pkl')
@@ -163,7 +163,7 @@ if __name__ == '__main__':
         os.makedirs('user_data/data/online', exist_ok=True)
         os.makedirs('user_data/model/online', exist_ok=True)
 
-        w2v_file = 'user_data/data/online/article_w2v.pkl'
+        w2v_file = 'user_data/data/online/article_w2v_cbow.pkl'
         model_path = 'user_data/model/online'
 
     log.debug(f'df_click shape: {df_click.shape}')
@@ -199,7 +199,7 @@ if __name__ == '__main__':
     n_len = total // n_split
 
     # 清空临时文件夹
-    for path, _, file_list in os.walk('user_data/tmp/w2v'):
+    for path, _, file_list in os.walk('user_data/tmp/w2v_cbow'):
         for file_name in file_list:
             os.remove(os.path.join(path, file_name))
 
@@ -213,7 +213,7 @@ if __name__ == '__main__':
 
     df_data = pd.DataFrame()
     # 使用多线程召回 结果被存到了多个文件中
-    for path, _, file_list in os.walk('user_data/tmp/w2v'):
+    for path, _, file_list in os.walk('user_data/tmp/w2v_cbow'):
         for file_name in file_list:
             df_temp = pd.read_pickle(os.path.join(path, file_name))
             df_data = df_data.append(df_temp)
@@ -238,6 +238,6 @@ if __name__ == '__main__':
         )
     # 保存召回结果
     if mode == 'valid':
-        df_data.to_pickle('user_data/data/offline/recall_w2v.pkl')
+        df_data.to_pickle('user_data/data/offline/recall_w2v_cbow.pkl')
     else:
-        df_data.to_pickle('user_data/data/online/recall_w2v.pkl')
+        df_data.to_pickle('user_data/data/online/recall_w2v_cbow.pkl')

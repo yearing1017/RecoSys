@@ -22,7 +22,7 @@ signal.signal(signal.SIGINT, multitasking.killall)
 random.seed(2020)
 
 # 命令行参数
-parser = argparse.ArgumentParser(description='itemcf 召回')
+parser = argparse.ArgumentParser(description='itemcf 召回: 未加入loc和正反向权重')
 parser.add_argument('--mode', default='valid')
 parser.add_argument('--logfile', default='test.log')
 
@@ -34,7 +34,7 @@ logfile = args.logfile
 # 初始化日志
 os.makedirs('user_data/log', exist_ok=True)
 log = Logger(f'user_data/log/{logfile}').logger
-log.info(f'itemcf 召回，mode: {mode}')
+log.info(f'itemcf 召回: 未加入loc和正反向权重，mode: {mode}')
 
 
 def cal_sim(df):
@@ -60,11 +60,11 @@ def cal_sim(df):
 
                 # 位置信息权重
                 # 考虑文章的正向顺序点击和反向顺序点击
-                loc_alpha = 1.0 if loc2 > loc1 else 0.7
+                #loc_alpha = 1.0 if loc2 > loc1 else 0.7
                 # 离得越近且为正向点击的话 权重就越大
-                loc_weight = loc_alpha * (0.9**(np.abs(loc2 - loc1) - 1))
+                #loc_weight = loc_alpha * (0.9**(np.abs(loc2 - loc1) - 1))
                 # math.log(1 + len(items))是对活跃用户的惩罚
-                sim_dict[item][relate_item] += loc_weight  / \
+                sim_dict[item][relate_item] += 1  / \
                     math.log(1 + len(items))
     # 根据上面得到的共现数 算相似矩阵 C矩阵归一化可以得到物品之间的余弦相似度矩阵W。
     for item, relate_items in tqdm(sim_dict.items()):
@@ -103,7 +103,8 @@ def recall(df_query, item_sim, user_item_dict, worker_id):
                                            reverse=True)[0:200]:
                 if relate_item not in interacted_items:
                     rank.setdefault(relate_item, 0)
-                    rank[relate_item] += wij * (0.7**loc)
+                    #rank[relate_item] += wij * (0.7**loc)
+                    rank[relate_item] += wij
 
         sim_items = sorted(rank.items(), key=lambda d: d[1],
                            reverse=True)[:100]
@@ -134,8 +135,8 @@ def recall(df_query, item_sim, user_item_dict, worker_id):
 
     df_data = pd.concat(data_list, sort=False)
 
-    os.makedirs('user_data/tmp/itemcf', exist_ok=True)
-    df_data.to_pickle(f'user_data/tmp/itemcf/{worker_id}.pkl')
+    os.makedirs('user_data/tmp/itemcf_no_loc/', exist_ok=True)
+    df_data.to_pickle(f'user_data/tmp/itemcf_no_loc/{worker_id}.pkl')
 
 
 if __name__ == '__main__':
@@ -144,13 +145,13 @@ if __name__ == '__main__':
         df_query = pd.read_pickle('user_data/data/offline/query.pkl')
 
         os.makedirs('user_data/sim/offline', exist_ok=True)
-        sim_pkl_file = 'user_data/sim/offline/itemcf_sim.pkl'
+        sim_pkl_file = 'user_data/sim/offline/itemcf_sim_no_loc.pkl'
     else:
         df_click = pd.read_pickle('user_data/data/online/click.pkl')
         df_query = pd.read_pickle('user_data/data/online/query.pkl')
 
         os.makedirs('user_data/sim/online', exist_ok=True)
-        sim_pkl_file = 'user_data/sim/online/itemcf_sim.pkl'
+        sim_pkl_file = 'user_data/sim/online/itemcf_sim_no_loc.pkl'
 
     log.debug(f'df_click shape: {df_click.shape}')
     log.debug(f'{df_click.head()}')
@@ -168,7 +169,7 @@ if __name__ == '__main__':
     n_len = total // n_split
 
     # 清空临时文件夹
-    for path, _, file_list in os.walk('user_data/tmp/itemcf'):
+    for path, _, file_list in os.walk('user_data/tmp/itemcf_no_loc'):
         for file_name in file_list:
             os.remove(os.path.join(path, file_name))
 
@@ -181,7 +182,7 @@ if __name__ == '__main__':
     log.info('合并任务')
     # # 使用多线程召回 结果被存到了多个文件中
     df_data = pd.DataFrame()
-    for path, _, file_list in os.walk('user_data/tmp/itemcf'):
+    for path, _, file_list in os.walk('user_data/tmp/itemcf_no_loc'):
         for file_name in file_list:
             df_temp = pd.read_pickle(os.path.join(path, file_name))
             df_data = df_data.append(df_temp)
@@ -206,6 +207,6 @@ if __name__ == '__main__':
         )
     # 保存召回结果
     if mode == 'valid':
-        df_data.to_pickle('user_data/data/offline/recall_itemcf.pkl')
+        df_data.to_pickle('user_data/data/offline/recall_itemcf_no_loc.pkl')
     else:
-        df_data.to_pickle('user_data/data/online/recall_itemcf.pkl')
+        df_data.to_pickle('user_data/data/online/recall_itemcf_no_loc.pkl')
