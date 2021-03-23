@@ -29,8 +29,8 @@ mode = args.mode
 logfile = args.logfile
 
 # 初始化日志
-os.makedirs('../user_data/log', exist_ok=True)
-log = Logger(f'../user_data/log/{logfile}').logger
+os.makedirs('user_data/log', exist_ok=True)
+log = Logger(f'user_data/log/{logfile}').logger
 log.info(f'lightgbm 排序，mode: {mode}')
 
 
@@ -118,7 +118,7 @@ def train_model(df_feature, df_query):
         })
         df_importance_list.append(df_importance)
         # 保存模型
-        joblib.dump(model, f'../user_data/model/lgb{fold_id}.pkl')
+        joblib.dump(model, f'user_data/model/lgb{fold_id}.pkl')
     # k折训练结束后
     # 特征重要性
     df_importance = pd.concat(df_importance_list)
@@ -148,8 +148,8 @@ def train_model(df_feature, df_query):
     # 给测试集中每个用户推荐召回结果中排序最高的5条文章
     df_sub = gen_sub(prediction)
     df_sub.sort_values(['user_id'], inplace=True)
-    os.makedirs('../prediction_result', exist_ok=True)
-    df_sub.to_csv(f'../prediction_result/result.csv', index=False)
+    os.makedirs('prediction_result', exist_ok=True)
+    df_sub.to_csv(f'prediction_result/result.csv', index=False)
 
 
 def online_predict(df_test):
@@ -166,22 +166,22 @@ def online_predict(df_test):
     prediction['pred'] = 0
 
     for fold_id in tqdm(range(5)):
-        model = joblib.load(f'../user_data/model/lgb{fold_id}.pkl')
+        model = joblib.load(f'user_data/model/lgb{fold_id}.pkl')
         pred_test = model.predict_proba(df_test[feature_names])[:, 1]
         prediction['pred'] += pred_test / 5
 
     # 生成提交文件
     df_sub = gen_sub(prediction)
     df_sub.sort_values(['user_id'], inplace=True)
-    os.makedirs('../prediction_result', exist_ok=True)
-    df_sub.to_csv(f'../prediction_result/result.csv', index=False)
+    os.makedirs('prediction_result', exist_ok=True)
+    df_sub.to_csv(f'prediction_result/result.csv', index=False)
 
 
 if __name__ == '__main__':
     if mode == 'valid':
         # 特征工程文件包括之前的合并召回结果 + 新建立的特征
-        df_feature = pd.read_pickle('../user_data/data/offline/feature.pkl')
-        df_query = pd.read_pickle('../user_data/data/offline/query.pkl')
+        df_feature = pd.read_pickle('user_data/data/offline/feature.pkl')
+        df_query = pd.read_pickle('user_data/data/offline/query.pkl')
         # 类别型特征
         for f in df_feature.select_dtypes('object').columns:
             lbl = LabelEncoder() # 将n个类别编码为0~n-1之间的整数（包含0和n-1）
@@ -189,5 +189,5 @@ if __name__ == '__main__':
 
         train_model(df_feature, df_query)
     else:
-        df_feature = pd.read_pickle('../user_data/data/online/feature.pkl')
+        df_feature = pd.read_pickle('user_data/data/online/feature.pkl')
         online_predict(df_feature)

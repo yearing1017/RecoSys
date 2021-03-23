@@ -35,8 +35,8 @@ mode = args.mode
 logfile = args.logfile
 
 # 初始化日志
-os.makedirs('../user_data/log', exist_ok=True)
-log = Logger(f'../user_data/log/{logfile}').logger
+os.makedirs('user_data/log', exist_ok=True)
+log = Logger(f'user_data/log/{logfile}').logger
 log.info(f'召回合并: {mode}')
 
 
@@ -92,15 +92,15 @@ def recall_result_sim(df1_, df2_):
 
 if __name__ == '__main__':
     if mode == 'valid':
-        df_click = pd.read_pickle('../user_data/data/offline/click.pkl')
-        df_query = pd.read_pickle('../user_data/data/offline/query.pkl')
+        df_click = pd.read_pickle('user_data/data/offline/click.pkl')
+        df_query = pd.read_pickle('user_data/data/offline/query.pkl')
 
-        recall_path = '../user_data/data/offline'
+        recall_path = 'user_data/data/offline'
     else:
-        df_click = pd.read_pickle('../user_data/data/online/click.pkl')
-        df_query = pd.read_pickle('../user_data/data/online/query.pkl')
+        df_click = pd.read_pickle('user_data/data/online/click.pkl')
+        df_query = pd.read_pickle('user_data/data/online/query.pkl')
 
-        recall_path = '../user_data/data/online'
+        recall_path = 'user_data/data/online'
 
     log.debug(f'max_threads {max_threads}')
 
@@ -177,23 +177,32 @@ if __name__ == '__main__':
     # 计算相关指标
     if mode == 'valid':
         total = df_query[df_query['click_article_id'] != -1].user_id.nunique()
+
+        hitrate_5_1, mrr_5_1, hitrate_10_1, mrr_10_1, hitrate_20_1, mrr_20_1, hitrate_40_1, mrr_40_1, hitrate_50_1, mrr_50_1 = evaluate(
+            recall_final[recall_final['label'].notnull()], total)
+        
+        log.debug(
+            f'召回合并后,未删除无用用户指标: {hitrate_5_1}, {mrr_5_1}, {hitrate_10_1}, {mrr_10_1}, {hitrate_20_1}, {mrr_20_1}, {hitrate_40_1}, {mrr_40_1}, {hitrate_50_1}, {mrr_50_1}'
+        )
+
         hitrate_5, mrr_5, hitrate_10, mrr_10, hitrate_20, mrr_20, hitrate_40, mrr_40, hitrate_50, mrr_50 = evaluate(
             df_useful_recall[df_useful_recall['label'].notnull()], total)
         
         log.debug(
-            f'召回合并后指标: {hitrate_5}, {mrr_5}, {hitrate_10}, {mrr_10}, {hitrate_20}, {mrr_20}, {hitrate_40}, {mrr_40}, {hitrate_50}, {mrr_50}'
+            f'召回合并后,删除无用用户指标: {hitrate_5}, {mrr_5}, {hitrate_10}, {mrr_10}, {hitrate_20}, {mrr_20}, {hitrate_40}, {mrr_40}, {hitrate_50}, {mrr_50}'
         )
 
     df = df_useful_recall['user_id'].value_counts().reset_index()
     df.columns = ['user_id', 'cnt']
-    log.debug(f"平均每个用户召回数量：{df['cnt'].mean()}")
+    log.debug(f"删除后平均每个用户召回数量：{df['cnt'].mean()}")
 
     log.debug(
-        f"标签分布: {df_useful_recall[df_useful_recall['label'].notnull()]['label'].value_counts()}"
+        f"删除前标签分布: {recall_final[recall_final['label'].notnull()]['label'].value_counts()}"
+        f"删除后标签分布: {df_useful_recall[df_useful_recall['label'].notnull()]['label'].value_counts()}"
     )
 
     # 保存到本地
     if mode == 'valid':
-        df_useful_recall.to_pickle('../user_data/data/offline/recall.pkl')
+        df_useful_recall.to_pickle('user_data/data/offline/recall.pkl')
     else:
-        df_useful_recall.to_pickle('../user_data/data/online/recall.pkl')
+        df_useful_recall.to_pickle('user_data/data/online/recall.pkl')

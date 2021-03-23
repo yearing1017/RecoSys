@@ -29,8 +29,8 @@ mode = args.mode
 logfile = args.logfile
 
 # 初始化日志
-os.makedirs('../user_data/log', exist_ok=True)
-log = Logger(f'../user_data/log/{logfile}').logger
+os.makedirs('user_data/log', exist_ok=True)
+log = Logger(f'user_data/log/{logfile}').logger
 log.info(f'排序特征，mode: {mode}')
 
 # itemCF  待预测新闻和用户所有历史点击新闻相似度按次序加权求和
@@ -108,17 +108,17 @@ def func_w2w_last_sim(x):
 
 if __name__ == '__main__':
     if mode == 'valid':
-        df_feature = pd.read_pickle('../user_data/data/offline/recall.pkl')
-        df_click = pd.read_pickle('../user_data/data/offline/click.pkl')
+        df_feature = pd.read_pickle('user_data/data/offline/recall.pkl')
+        df_click = pd.read_pickle('user_data/data/offline/click.pkl')
 
     else:
-        df_feature = pd.read_pickle('../user_data/data/online/recall.pkl')
-        df_click = pd.read_pickle('../user_data/data/online/click.pkl')
+        df_feature = pd.read_pickle('user_data/data/online/recall.pkl')
+        df_click = pd.read_pickle('user_data/data/online/click.pkl')
 
     # 文章特征
     log.debug(f'df_feature.shape: {df_feature.shape}')
 
-    df_article = pd.read_csv('../tcdata/articles.csv')
+    df_article = pd.read_csv('tcdata/articles.csv')
     df_article['created_at_ts'] = df_article['created_at_ts'] / 1000 # ms/1000 = s
     df_article['created_at_ts'] = df_article['created_at_ts'].astype('int')
     # 总的召回结果 将召回的新闻的具体信息合并进来
@@ -256,11 +256,11 @@ if __name__ == '__main__':
     user_item_dict = dict(zip(user_item_['user_id'], user_item_['article_id']))
 
     if mode == 'valid':
-        f = open('../user_data/sim/offline/itemcf_sim.pkl', 'rb')
+        f = open('user_data/sim/offline/itemcf_sim.pkl', 'rb')
         item_sim = pickle.load(f)
         f.close()
     else:
-        f = open('../user_data/sim/online/itemcf_sim.pkl', 'rb')
+        f = open('user_data/sim/online/itemcf_sim.pkl', 'rb')
         item_sim = pickle.load(f)
         f.close()
 
@@ -278,11 +278,11 @@ if __name__ == '__main__':
     
     ## w2v 相关 将之前的召回的新闻相似度矩阵 拿出来 构建下面两个特征 保存下来
     if mode == 'valid':
-        f = open('../user_data/data/offline/article_w2v.pkl', 'rb')
+        f = open('user_data/data/offline/article_w2v.pkl', 'rb')
         article_vec_map = pickle.load(f)
         f.close()
     else:
-        f = open('../user_data/data/online/article_w2v.pkl', 'rb')
+        f = open('user_data/data/online/article_w2v.pkl', 'rb')
         article_vec_map = pickle.load(f)
         f.close()
     # 待预测新闻和用户最近一次点击新闻相似度
@@ -297,7 +297,7 @@ if __name__ == '__main__':
 
     # 保存特征文件
     if mode == 'valid':
-        df_feature.to_pickle('../user_data/data/offline/feature.pkl')
+        df_feature.to_pickle('user_data/data/offline/feature.pkl')
 
     else:
-        df_feature.to_pickle('../user_data/data/online/feature.pkl')
+        df_feature.to_pickle('user_data/data/online/feature.pkl')
