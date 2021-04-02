@@ -64,7 +64,7 @@ def func_if_last(x):
     return sim
 
 
-# 两个向量之间的余弦距离
+# 两个向量之间的余弦相似度
 def consine_distance(vector1, vector2):
     if type(vector1) != np.ndarray or type(vector2) != np.ndarray:
         return -1
