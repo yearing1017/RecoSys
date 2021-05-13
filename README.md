@@ -5,8 +5,10 @@ Recommend system learning resources and learning notes
 
 - [RecoSys_Paper](#paper)
 - [RecoSys_Note](#note)
-- [RecoSys_LearningResources](#blog)
-- [RecoSys_Algorithm_PyTorch](#torch)
+- [RecoSys_Blog](#blog)
+- [RecoSys_DNN](#torch)
+- [RescoSys_BigData](https://github.com/yearing1017/RecoSys/tree/main/BigData)
+- [RescoSys_NewsReco](https://github.com/yearing1017/RecoSys/tree/main/NewsReco)
 
 <a id="paper"></a>
 
@@ -85,16 +87,13 @@ Recommend system learning resources and learning notes
 
 ### RecoSys_resource
 
-#### 机器学习与推荐系统
+#### RescoSys_ML_DL
 
 - [机器学习中的MLE、MAP、贝叶斯估计](https://zhuanlan.zhihu.com/p/72370235)
 - [推荐系统召回四模型之：全能的FM模型](https://zhuanlan.zhihu.com/p/58160982)
 - [一篇文章搞定GBDT、Xgboost和LightGBM的面试](https://zhuanlan.zhihu.com/p/148050748)
 - [机器学习决策树（上）——ID3、C4.5、CART](https://zhuanlan.zhihu.com/p/85731206)
 - [机器学习决策树（下）——XGBoost、LightGBM](https://zhuanlan.zhihu.com/p/87885678)
-
-#### 推荐系统&深度学习
-
 - [见微知著，你真的搞懂Google的Wide&Deep模型了吗？](https://zhuanlan.zhihu.com/p/142958834)
 - [详解 Wide & Deep 结构背后的动机](https://zhuanlan.zhihu.com/p/53361519)
 
@@ -107,10 +106,10 @@ Recommend system learning resources and learning notes
 
 <a id="torch"></a>
 
-### RecoSys_Algorithm_PyTorch
+### RecoSys_DNN_PyTorch_TF
 
-- [CollaborativeFiltering](https://github.com/yearing1017/RecoSys/tree/main/Models_PyTorch/CollaborativeFiltering)
-- [AutoRec-2015](https://github.com/yearing1017/RecoSys/tree/main/Models_PyTorch/AutoRec-2015)
-- [Deep Crossing-2016](https://github.com/yearing1017/RecoSys/tree/main/RecoSys_Algorithm_PyTorch/Deep_Crossing-2016)
-- [NeuralCF-2016](https://github.com/yearing1017/RecoSys/tree/main/Models_PyTorch/NeuralCF-2016)
-- [AFM-2017](https://github.com/yearing1017/RecoSys/tree/main/Models_PyTorch/AFM-2017)
+- [CollaborativeFiltering](https://github.com/yearing1017/RecoSys/tree/main/RecoSys_DNN/CollaborativeFiltering)
+- [AutoRec-2015](https://github.com/yearing1017/RecoSys/tree/main/RecoSys_DNN/AutoRec-2015)
+- [Deep Crossing-2016](https://github.com/yearing1017/RecoSys/tree/main/RecoSys_DNN/Deep_Crossing-2016)
+- [NeuralCF-2016](https://github.com/yearing1017/RecoSys/tree/main/RecoSys_DNN/NeuralCF-2016)
+- [AFM-2017](https://github.com/yearing1017/RecoSys/tree/main/RecoSys_DNN/AFM-2017)
