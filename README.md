@@ -82,6 +82,8 @@ Recommend system learning resources and learning notes
 - [理解线上A/B测试](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/线上A:B测试.md)
 - [推荐系统中的的评估体系](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/评估体系.md)
 - [YouTobe推荐系统架构](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/YouTube%20推荐系统架构.md)
+- [计算广告中的lookalike](#)
+
 
 <a id="blog"></a>
 
