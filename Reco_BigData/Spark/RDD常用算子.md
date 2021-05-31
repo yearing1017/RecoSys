@@ -41,14 +41,10 @@ val dataRDD1: RDD[Int] = dataRDD.mapPartitions(
 ```
 
 - **map和mapPartitions的区别**
-
   - 数据处理角度：Map 算子是分区内一个数据一个数据的执行，类似于串行操作。而 mapPartitions 算子 是以分区为单位进行批处理操作。
-
   - 功能角度：Map 算子主要目的将数据源中的数据进行转换和改变。但是不会减少或增多数据。 MapPartitions 算子需要传递一个迭代器，返回一个迭代器，没有要求的元素的个数保持不变， 所以可以增加或减少数据
   - Map 算子因为类似于串行操作，所以性能比较低，而是 mapPartitions 算子类似于批处 理，所以性能较高。但是 mapPartitions 算子会长时间占用内存，那么这样会导致内存可能 不够用，出现内存溢出的错误。所以在内存有限的情况下，不推荐使用。使用 map 操作。
-
 - **mapPartitionsWithIndex**
-
   - 将待处理的数据以分区为单位发送到计算节点进行处理，这里的处理是指可以进行任意的处 理，哪怕是过滤数据，在处理时同时可以获取当前分区索引。
 
 ```scala
@@ -208,7 +204,19 @@ c.top(2)
 val topFreqUser = userRatings.map(l => (l._1, 1)).reduceByKey(_ + _).top(100)(Ordering[Int].on(_._2))
 ```
 
-- toDebugString
+- **takeOrdered**
+    - Orders the data items of the RDD using their inherent implicit ordering function and returns the first n items as an array.
+
+```scala
+val b = sc.parallelize(List("dog", "cat", "ape", "salmon", "gnu"), 2)
+b.takeOrdered(2)
+res19: Array[String] = Array(ape, cat)
+
+// 按第二位的大小从小到大取top100
+val topFreqUser = userRatings.map(l => (l._1, 1)).reduceByKey(_ + _).takeOrdered(100)(Ordering[Int].on(_._2))
+```
+
+- **toDebugString**
   - Returns a string that contains debug information about the RDD and its dependencies.
 
 ```scala
