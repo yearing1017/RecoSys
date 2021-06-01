@@ -119,8 +119,6 @@ val dataRDD1 = dataRDD.sample(false, 0.5)
 val dataRDD2 = dataRDD.sample(true, 2)
 ```
 
-
-
 - **distinct**
   - def distinct(numPartitions: Int)(implicit ord: Ordering[T] = null): RDD[T]
   - 将数据集中重复的数据去重
@@ -136,7 +134,20 @@ a.distinct(3).partitions.length
 //res17: Int = 3
 ```
 
+- **coalesce**
+  - Coalesces the associated data into a given number of partitions. 
+  - 根据数据量缩减分区，用于大数据集过滤后，提高小数据集的执行效率,当 spark 程序中，存在过多的小任务的时候，可以通过 coalesce 方法，收缩合并分区，减少分区的个数，减小任务调度成本
+
+```scala
+val y = sc.parallelize(1 to 10, 10)
+val z = y.coalesce(2, false)
+z.partitions.length
+res9: Int = 2
+```
+
+
 - **repartition**
+  - repartition(numPartitions) is simply an abbreviation for coalesce(numPartitions, shuffle = true).
   - This function changes the number of partitions to the number specified by the numPartitions parameter 
   - 该操作内部其实执行的是 coalesce 操作，参数 shuffle 的默认值为 true。无论是将分区数多的 RDD 转换为分区数少的 RDD，还是将分区数少的 RDD 转换为分区数多的 RDD，repartition 操作都可以完成，因为无论如何都会经 shuffle 过程。
 
