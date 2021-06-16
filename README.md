@@ -2,7 +2,6 @@
 Recommend system learning resources and learning notes
 
 ### 目录
-
 - [RecoSys_Paper](#paper)
 - [RecoSys_Note](#note)
 - [RecoSys_Blog](#blog)
