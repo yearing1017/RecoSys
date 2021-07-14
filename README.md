@@ -83,6 +83,9 @@ Recommend system learning resources and learning notes
 - [YouTobe推荐系统架构](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/YouTube%20推荐系统架构.md)
 - [计算广告中的lookalike](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A%E4%B8%AD%E7%9A%84lookalike.md)
 - [itemCF再认识](https://github.com/yearing1017/RecoSys/blob/main/Reco_note/itemCF%E5%86%8D%E8%AE%A4%E8%AF%86.md)
+- [LLR相似度](#)
+- [poly2与FM再认识](#)
+- [wide&deep总结](#)
 
 
 <a id="blog"></a>
