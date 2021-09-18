@@ -27,23 +27,28 @@ Recommend system learning resources and learning notes
 
 #### Deep Learning Recommender System
 
-- [[AutoRec] AutoRec: Autoencoders Meet Collaborative Filtering(2015)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BAutoRec%5D-2015.pdf)
-- [[Deep Crossing] Deep Crossing - Web-Scale Modeling without Manually Crafted Combinatorial Features (Microsoft 2016) ](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BDeep%20Crossing%5D%20Deep%20Crossing%20-%20Web-Scale%20Modeling%20without%20Manually%20Crafted%20Combinatorial%20Features.pdf)
-- [[PNN] Product-based Neural Networks for User Response Prediction (SJTU 2016)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BPNN%5D%20Product-based%20Neural%20Networks%20for%20User%20Response%20Prediction.pdf)
-- [[Wide&Deep] Wide & Deep Learning for Recommender Systems (Google 2016)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BWide%26Deep%5D%20Wide%20%26%20Deep%20Learning%20for%20Recommender%20Systems.pdf)
-- [[FNN] Deep Learning over Multi-field Categorical Data (UCL 2016)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BFNN%5D%20Deep%20Learning%20over%20Multi-field%20Categorical%20Data.pdf)
-- [[NCF] Neural Collaborative Filtering (NUS 2017)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BNCF%5D%20Neural%20Collaborative%20Filtering.pdf)
+- [[AutoRec] AutoRec: Autoencoders Meet Collaborative Filtering(2015)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BAutoRec%5D-2015.pdf) <br />
+- [[DSSM in Recsys] A Multi-View Deep Learning Approach for Cross Domain User Modeling in Recommendation Systems (Microsoft 2015)]() <br />
+- [[Deep Crossing] Deep Crossing - Web-Scale Modeling without Manually Crafted Combinatorial Features (Microsoft 2016) ](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BDeep%20Crossing%5D%20Deep%20Crossing%20-%20Web-Scale%20Modeling%20without%20Manually%20Crafted%20Combinatorial%20Features.pdf) <br />
+- [[PNN] Product-based Neural Networks for User Response Prediction (SJTU 2016)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BPNN%5D%20Product-based%20Neural%20Networks%20for%20User%20Response%20Prediction.pdf)<br />
+- [[Wide&Deep] Wide & Deep Learning for Recommender Systems (Google 2016)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BWide%26Deep%5D%20Wide%20%26%20Deep%20Learning%20for%20Recommender%20Systems.pdf) <br />
+- [[FNN] Deep Learning over Multi-field Categorical Data (UCL 2016)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BFNN%5D%20Deep%20Learning%20over%20Multi-field%20Categorical%20Data.pdf) <br />
+- [[NCF] Neural Collaborative Filtering (NUS 2017)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BNCF%5D%20Neural%20Collaborative%20Filtering.pdf) <br />
 - [[DCN] Deep & Cross Network for Ad Click Predictions (Stanford 2017)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BDCN%5D%20Deep%20%26%20Cross%20Network%20for%20Ad%20Click%20Predictions.pdf)
-- [[DeepFM] A Factorization-Machine based Neural Network for CTR Prediction (HIT-Huawei 2017)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BDeepFM%5D%20A%20Factorization-Machine%20based%20Neural%20Network%20for%20CTR%20Prediction.pdf)
-- [[AFM] Attentional Factorization Machines - Learning the Weight of Feature Interactions via Attention Networks (ZJU 2017)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BAFM%5D%20Attentional%20Factorization%20Machines%20-%20Learning%20the%20Weight%20of%20Feature%20Interactions%20via%20Attention%20Networks.pdf)
+- [[DeepFM] A Factorization-Machine based Neural Network for CTR Prediction (HIT-Huawei 2017)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BDeepFM%5D%20A%20Factorization-Machine%20based%20Neural%20Network%20for%20CTR%20Prediction.pdf) <br />
+- [[AFM] Attentional Factorization Machines - Learning the Weight of Feature Interactions via Attention Networks (ZJU 2017)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Deep%20Learning%20Recommender%20System/%5BAFM%5D%20Attentional%20Factorization%20Machines%20-%20Learning%20the%20Weight%20of%20Feature%20Interactions%20via%20Attention%20Networks.pdf) <br />
+- [[DIN] Deep Interest Network for Click-Through Rate Prediction (Alibaba 2018)]() <br />
+- [[ESMM] Entire Space Multi-Task Model - An Effective Approach for Estimating Post-Click Conversion Rate (Alibaba 2018)]() <br />
+- [[xDeepFM] xDeepFM - Combining Explicit and Implicit Feature Interactions for Recommender Systems (USTC 2018)]() <br />
+
 
 #### Embedding
 
-- [[Word2Vec] Distributed Representations of Words and Phrases and their Compositionality (Google 2013)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BWord2Vec%5D%20Distributed%20Representations%20of%20Words%20and%20Phrases%20and%20their%20Compositionality.pdf)
-- [[Word2Vec] Efficient Estimation of Word Representations in Vector Space (Google 2013)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BWord2Vec%5D%20Efficient%20Estimation%20of%20Word%20Representations%20in%20Vector%20Space.pdf)
-- [[Word2Vec] Word2vec Parameter Learning Explained (UMich 2016)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BWord2Vec%5D%20Word2vec%20Parameter%20Learning%20Explained%20.pdf)
-- [[Item2Vec] Item2Vec-Neural Item Embedding for Collaborative Filtering (Microsoft 2016)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BItem2Vec%5D%20Item2Vec-Neural%20Item%20Embedding%20for%20Collaborative%20Filtering.pdf)
--[[Airbnb Embedding] Real-time Personalization using Embeddings for Search Ranking at Airbnb (Airbnb 2018)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BAirbnb%20Embedding%5D%20Real-time%20Personalization%20using%20Embeddings%20for%20Search%20Ranking%20at%20Airbnb%20(Airbnb%202018).pdf)
+- [[Word2Vec] Distributed Representations of Words and Phrases and their Compositionality (Google 2013)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BWord2Vec%5D%20Distributed%20Representations%20of%20Words%20and%20Phrases%20and%20their%20Compositionality.pdf) <br />
+- [[Word2Vec] Efficient Estimation of Word Representations in Vector Space (Google 2013)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BWord2Vec%5D%20Efficient%20Estimation%20of%20Word%20Representations%20in%20Vector%20Space.pdf) <br />
+- [[Word2Vec] Word2vec Parameter Learning Explained (UMich 2016)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BWord2Vec%5D%20Word2vec%20Parameter%20Learning%20Explained%20.pdf) <br />
+- [[Item2Vec] Item2Vec-Neural Item Embedding for Collaborative Filtering (Microsoft 2016)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BItem2Vec%5D%20Item2Vec-Neural%20Item%20Embedding%20for%20Collaborative%20Filtering.pdf) <br />
+- [[Airbnb Embedding] Real-time Personalization using Embeddings for Search Ranking at Airbnb (Airbnb 2018)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BAirbnb%20Embedding%5D%20Real-time%20Personalization%20using%20Embeddings%20for%20Search%20Ranking%20at%20Airbnb%20(Airbnb%202018).pdf) <br />
 
 <a id="note"></a>
 
