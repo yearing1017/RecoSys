@@ -4,7 +4,6 @@ Recommend system learning resources and learning notes
 ### 目录
 - [RecoSys_Paper](#paper)
 - [RecoSys_Note](#note)
-- [RecoSys_Blog](#blog)
 - [RecoSys_DNN](#torch)
 - [RescoSys_BigData](https://github.com/yearing1017/RecoSys/tree/main/BigData)
 - [RescoSys_NewsReco](https://github.com/yearing1017/RecoSys/tree/main/NewsReco)
@@ -44,11 +43,28 @@ Recommend system learning resources and learning notes
 
 #### Embedding
 
+* [[LSH] Locality-Sensitive Hashing for Finding Nearest Neighbors (IEEE 2008)]() <br />
 - [[Word2Vec] Distributed Representations of Words and Phrases and their Compositionality (Google 2013)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BWord2Vec%5D%20Distributed%20Representations%20of%20Words%20and%20Phrases%20and%20their%20Compositionality.pdf) <br />
 - [[Word2Vec] Efficient Estimation of Word Representations in Vector Space (Google 2013)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BWord2Vec%5D%20Efficient%20Estimation%20of%20Word%20Representations%20in%20Vector%20Space.pdf) <br />
+- [[Graph Embedding] DeepWalk- Online Learning of Social Representations (SBU 2014)]() <br />
+- [[Node2vec] Node2vec - Scalable Feature Learning for Networks (Stanford 2016)]() <br />
 - [[Word2Vec] Word2vec Parameter Learning Explained (UMich 2016)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BWord2Vec%5D%20Word2vec%20Parameter%20Learning%20Explained%20.pdf) <br />
 - [[Item2Vec] Item2Vec-Neural Item Embedding for Collaborative Filtering (Microsoft 2016)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BItem2Vec%5D%20Item2Vec-Neural%20Item%20Embedding%20for%20Collaborative%20Filtering.pdf) <br />
+- [[SDNE] Structural Deep Network Embedding (THU 2016)]() <br />
 - [[Airbnb Embedding] Real-time Personalization using Embeddings for Search Ranking at Airbnb (Airbnb 2018)](https://github.com/yearing1017/RecoSys/blob/main/Reco_paper/Embedding/%5BAirbnb%20Embedding%5D%20Real-time%20Personalization%20using%20Embeddings%20for%20Search%20Ranking%20at%20Airbnb%20(Airbnb%202018).pdf) <br />
+- [[Airbnb Embedding] Real-time Personalization using Embeddings for Search Ranking at Airbnb (Airbnb 2018)]() <br />
+- [[Alibaba Embedding] Billion-scale Commodity Embedding for E-commerce Recommendation in Alibaba (Alibaba 2018)]() <br />
+
+
+### Industry Recommender System
+- [[Pinterest] Personalized content blending In the Pinterest home feed (Pinterest 2016)]() <br />
+- [[Pinterest] Graph Convolutional Neural Networks for Web-Scale Recommender Systems (Pinterest 2018)]() <br />
+- [[Airbnb] Search Ranking and Personalization at Airbnb Slides (Airbnb 2018)]() <br />
+- [[Baidu slides] DNN in Baidu Ads (Baidu 2017)]() <br />
+- [[Quora] Building a Machine Learning Platform at Quora (Quora 2016)]() <br />
+- [[Netflix] The Netflix Recommender System- Algorithms, Business Value, and Innovation (Netflix 2015)]() <br />
+- [[Youtube] Deep Neural Networks for YouTube Recommendations (Youtube 2016)]() <br />
+- [[Airbnb] Applying Deep Learning To Airbnb Search (Airbnb 2018)]() <br />
 
 <a id="note"></a>
 
@@ -57,33 +73,8 @@ Recommend system learning resources and learning notes
 - [机器学习](https://github.com/yearing1017/RecoSys/tree/main/Reco_note/机器学习)
 - [深度学习](https://github.com/yearing1017/RecoSys/tree/main/Reco_note/深度学习)
 - [推荐算法](https://github.com/yearing1017/RecoSys/tree/main/Reco_note/推荐算法)
-    - [召回](https://github.com/yearing1017/RecoSys/tree/main/Reco_note/推荐算法/召回)
-    - [排序](https://github.com/yearing1017/RecoSys/tree/main/Reco_note/推荐算法/排序)
-    - [《深度学习与推荐系统》王喆](https://github.com/yearing1017/RecoSys/tree/main/Reco_note/推荐算法/《深度学习与推荐系统》王喆)
-    - [《推荐系统实战》项亮](https://github.com/yearing1017/RecoSys/tree/main/Reco_note/推荐算法/《推荐系统实战》项亮)
 - [Graph_Embedding](https://github.com/yearing1017/RecoSys/tree/main/Reco_note/Graph_Embedding)
 
-
-<a id="blog"></a>
-
-### RecoSys_resource
-
-#### RescoSys_ML_DL
-
-- [机器学习中的MLE、MAP、贝叶斯估计](https://zhuanlan.zhihu.com/p/72370235)
-- [推荐系统召回四模型之：全能的FM模型](https://zhuanlan.zhihu.com/p/58160982)
-- [一篇文章搞定GBDT、Xgboost和LightGBM的面试](https://zhuanlan.zhihu.com/p/148050748)
-- [机器学习决策树（上）——ID3、C4.5、CART](https://zhuanlan.zhihu.com/p/85731206)
-- [机器学习决策树（下）——XGBoost、LightGBM](https://zhuanlan.zhihu.com/p/87885678)
-- [见微知著，你真的搞懂Google的Wide&Deep模型了吗？](https://zhuanlan.zhihu.com/p/142958834)
-- [详解 Wide & Deep 结构背后的动机](https://zhuanlan.zhihu.com/p/53361519)
-
-#### Embedding
-
-- [无中生有：论推荐算法中的Embedding思想](https://zhuanlan.zhihu.com/p/320196402)
-- [Embedding在深度推荐系统中的3大应用方向](https://zhuanlan.zhihu.com/p/67218758)
-- [一文梳理推荐系统的中Embedding的应用实践](https://mp.weixin.qq.com/s/2JuyVJos2RrqGKcVgZRZvA)
-- [深度学习中不得不学的Graph Embedding方法](https://zhuanlan.zhihu.com/p/64200072)
 
 <a id="torch"></a>
 
