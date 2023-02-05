@@ -5,8 +5,8 @@ Recommend system learning resources and learning notes
 - [RecoSys_Paper](#paper)
 - [RecoSys_Note](#note)
 - [RecoSys_DNN](#torch)
-- [RescoSys_BigData](https://github.com/yearing1017/RecoSys/tree/main/BigData)
-- [RescoSys_NewsReco](https://github.com/yearing1017/RecoSys/tree/main/NewsReco)
+- [RescoSys_BigData](https://github.com/yearing1017/RecoSys/tree/main/Reco_bigdata)
+- [RescoSys_Project](https://github.com/yearing1017/RecoSys/tree/main/Reco_project)
 
 <a id="paper"></a>
 
