@@ -1,5 +1,5 @@
 ## Reco_Notes
-Recommend system learning resources and learning notes
+Personal learning resources and learning notes
 
 ### 目录
 - [RecoSys_Paper](#paper)
