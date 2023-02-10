@@ -39,6 +39,11 @@
 #### recall@N
 
 #### loss & gauc
+- log_loss
+- ne
+- auc
+- gauc
+- calibration
 
 ### 索引构建
 
