@@ -55,14 +55,18 @@
 - calibration
 
 ### 索引构建
+- 整体流程
 
 #### 保证同一模型serving
 
 #### faiss库
 
 #### ANN检索
+- 检索算法
 
 ### 在线serving
+- 整体流程
+
 
 #### 流程
 
