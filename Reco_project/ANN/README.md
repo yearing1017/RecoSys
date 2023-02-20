@@ -23,11 +23,22 @@
 - 多目标
 
 #### 特征
+- 特征处理方式
+    - embedding类特征
+    - 数值型特征
+    - 类别型特征
 - user侧
+    - embedding类特征
+    - 数值型特征
+    - 类别型特征
 - item侧
+    - embedding类特征
+    - 数值型特征
+    - 类别型特征
 
 #### 采样
 - in-batch负采样
+- 随机mask负采样
 - 全局负采样
 
 ### 模型训练
@@ -35,6 +46,16 @@
 #### 模型
 - 单目标
 - 多目标
+- loss
+    - cosine + fc + sigmoid
+    - cosine + 温度系数 + sigmoid
+- 模型结构
+    - user & item all_one_head
+    - share_bottom_only
+    - share_bottom & share_dnn
+    - user_multi_head & item_one_head
+    - user_one_head & item_mutli_head
+
 
 #### 离线训练
 - 天级训练
