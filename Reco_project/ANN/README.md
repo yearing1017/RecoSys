@@ -28,7 +28,9 @@
 #### 特征
 - 特征处理方式
     - embedding类特征
+    hash处理
     - 数值型特征
+    分桶处理
     - 类别型特征
 - user侧
     - embedding类特征
@@ -40,9 +42,19 @@
     - 类别型特征
 
 #### 采样
-- in-batch负采样
+- batch内负采样
+    - 原理
+    - 优点
+    - 缺点
+
 - 随机mask负采样
+    - 原理
+    - 优点
+    - 缺点
 - 全局负采样
+    - 原理
+    - 优点
+    - 缺点
 
 #### 样本权重
 - 正样本加权
@@ -62,6 +74,7 @@
 - loss
     - cosine + fc + sigmoid
     - cosine + 温度系数 + sigmoid
+        - 温度系数对loss的影响
 - 模型结构
     - user & item all_one_head
     - share_bottom_only
@@ -79,6 +92,7 @@
 
 #### 实时训练
 - FLINK任务
+    - 实时采样流程
 
 ### 离线评估
 
