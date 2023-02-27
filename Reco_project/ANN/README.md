@@ -44,6 +44,9 @@
 #### 采样
 - batch内负采样
     - 原理
+    一条数据：label + user_id + item_id + user_fea + item_fea
+    以一个batch内数据作为候选池，对于其中的每条数据，在剩余【batch_size-1】条数据中，选择N个item_id，进行负样本的拼接。 
+    例如：样本1：label_1(表示为正样本) + user_id + item_id + user_fea + item_fea，负采样得到N个item_id，负样本为：label_0(表示负样本) + user_id + item_id{1~N} + user_fea + item_fea{1~N}，用户侧特征不变，拼接相应item特征
     - 优点
     - 缺点
 
