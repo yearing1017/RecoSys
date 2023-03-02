@@ -119,10 +119,14 @@
 - 整体流程
 
 #### 保证同一模型serving
+- 目的：线上实时生成user-embedding，离线生成item-embedding索引库，需保证为同一模型
+- 做法：离线生成索引库时，将模型和索引库一起打包传输，供线上serving使用
 
 #### faiss库
 - 构建方式
-    - xx场景内7天的play量
+    - item特征拼接，生成预估样本
+    - 生成item—embedding，生成faiss库
+    - 索引库和模型打包，供线上serving使用，保证同一模型
 - 更新频率
     - 小时级
     - n小时级
