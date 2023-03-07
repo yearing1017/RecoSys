@@ -103,6 +103,7 @@
 
 #### recall@N
 - 计算方法
+对每个用户来说：topk召回结果【命中】 用户最近正行为item个数 / 用户最近正行为item个数
 
 #### loss & gauc
 - log_loss
