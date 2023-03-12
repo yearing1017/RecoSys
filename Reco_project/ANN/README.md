@@ -43,21 +43,24 @@
 
 #### 采样
 - batch内负采样
-    - 原理
-    一条数据：label + user_id + item_id + user_fea + item_fea
-    以一个batch内数据作为候选池，对于其中的每条数据，在剩余【batch_size-1】条数据中，选择N个item_id，进行负样本的拼接。 
-    例如：样本1：label_1(表示为正样本) + user_id + item_id + user_fea + item_fea，负采样得到N个item_id，负样本为：label_0(表示负样本) + user_id + item_id{1~N} + user_fea + item_fea{1~N}，用户侧特征不变，拼接相应item特征
+    - 原理：以一个batch内数据作为候选池，对于其中的每条数据，在剩余【batch_size-1】条数据中，选择N个item_id，进行负样本的拼接 
+    - 流程：
+        - 输入数据中的样本1：label_1(表示为正样本) + user_id + item_id + user_fea + item_fea
+        - 负采样随机采到1个item_id_neg,构造负样本：label_0(表示负样本) + user_id + item_id_neg + user_fea + item_neg_fea，用户侧特征不变，拼接相应item特征
     - 优点
     - 缺点
 
 - 随机mask负采样
     - 原理
-    发现batch内负采样会对热门item打压过重，根据item的展现量，进行随机mask，使之不参与训练，减轻热门item作为负样本的概率
+        - 发现batch内负采样会对热门item打压过重，根据item的展现量，进行随机mask，使之不参与训练，减轻热门item作为负样本的概率
     - 优点
     - 缺点
 - 全局负采样
     - 原理
-    构建全局item候选池，根据item的展现量，使热门item作为负样本的概率增大
+        - 构建全局item候选池，根据item的展现量，使热门item作为负样本的概率增大
+    - 流程：
+        - 输入数据中的样本1：label_1(表示为正样本) + user_id + item_id + user_fea + item_fea
+        - 在全局采样池中负采样，随机采到1个item_id_neg，构造负样本：label_0(表示负样本) + user_id + item_id_neg + user_fea + item_neg_fea，用户侧特征不变，拼接相应item特征
     - 优点
     - 缺点
 
@@ -87,6 +90,8 @@
     - user_multi_head & item_one_head
     - user_one_head & item_mutli_head
 
+- 结构优化
+    - senet结构
 
 #### 离线训练
 - 天级训练
@@ -102,8 +107,7 @@
 ### 离线评估
 
 #### recall@N
-- 计算方法
-对每个用户来说：topk召回结果【命中】 用户最近正行为item个数 / 用户最近正行为item个数
+- 计算方法：对每个用户来说：topk召回结果【命中】 用户最近正行为item个数 / 用户最近正行为item个数，对一批用户再求均值
 
 #### loss & gauc
 - log_loss
