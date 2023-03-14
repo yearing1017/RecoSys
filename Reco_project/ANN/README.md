@@ -43,13 +43,14 @@
 
 #### 采样
 - batch内负采样
-    - 原理：以一个batch内数据作为候选池，对于其中的每条数据，在剩余【batch_size-1】条数据中，选择N个item_id，进行负样本的拼接 
+    - 原理
+        - 以一个batch内数据作为候选池，对于其中的每条数据，在剩余【batch_size-1】条数据中，选择N个item_id，进行负样本的拼接 
     - 流程：
         - 输入数据中的样本1：label_1(表示为正样本) + user_id + item_id + user_fea + item_fea
         - 负采样随机采到1个item_id_neg,构造负样本：label_0(表示负样本) + user_id + item_id_neg + user_fea + item_neg_fea，用户侧特征不变，拼接相应item特征
     - 优点
     - 缺点
-
+    
 - 随机mask负采样
     - 原理
         - 发现batch内负采样会对热门item打压过重，根据item的展现量，进行随机mask，使之不参与训练，减轻热门item作为负样本的概率
@@ -122,6 +123,12 @@
 
 ### 索引构建
 - 整体流程
+  - 模型实时训练，每小时保存更新
+  - 拉取最新模型，离线生成索引，连同模型一起打包到线上数据平台
+    - 候选item的选取（发布天数、效率、展现量）
+    - item特征拼接，生成预估样本
+    - 预估item_embedding，生成faiss库
+
 
 #### 保证同一模型serving
 - 目的：线上实时生成user-embedding，离线生成item-embedding索引库，需保证为同一模型
@@ -130,7 +137,7 @@
 #### faiss库
 - 构建方式
     - item特征拼接，生成预估样本
-    - 生成item—embedding，生成faiss库
+    - 预估item_embedding，生成faiss库
     - 索引库和模型打包，供线上serving使用，保证同一模型
 - 更新频率
     - 小时级
