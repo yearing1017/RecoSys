@@ -28,9 +28,12 @@
 #### 特征
 - 特征处理方式
     - embedding类特征
-    hash处理
+      - hash取模
+        - 对id进行hash取模，ori_id转为hash_id
+        - 一个group中的为同一类型的embedding矩阵；举例：视频id为一个group，标签id为一个group
     - 数值型特征
-    分桶处理
+      - 归一化
+      - 分桶处理
     - 类别型特征
 - user侧
     - embedding类特征
